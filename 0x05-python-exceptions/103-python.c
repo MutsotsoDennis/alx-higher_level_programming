@@ -1,10 +1,10 @@
 #include <Python.h>
 #include <stdio.h>
 /**
- * print_pythonfloat - gives data of the PyFloatObject
+ * print_python_float - gives data of the PyFloatObject
  * @p: the PyObject
  */
-void print_pythonfloat(PyObject *p)
+void print_python_float(PyObject *p)
 {
 	double value = 0;
 	char *string = NULL;
@@ -22,10 +22,10 @@ void print_pythonfloat(PyObject *p)
 	printf("  value: %s\n", string);
 }
 /**
- * print_pythonbytes - gives data of the PyBytesObject
+ * print_python_bytes - gives data of the PyBytesObject
  * @p: the PyObject
  */
-void print_pythonbytes(PyObject *p)
+void print_python_bytes(PyObject *p)
 {
 	Py_ssize_t size = 0, i = 0;
 	char *string = NULL;
@@ -50,10 +50,10 @@ void print_pythonbytes(PyObject *p)
 	printf("\n");
 }
 /**
- * print_pythonlist - gives data of the PyListObject
+ * print_python_list - gives data of the PyListObject
  * @p: the PyObject
  */
-void print_pythonlist(PyObject *p)
+void print_python_list(PyObject *p)
 {
 	Py_ssize_t size = 0;
 	PyObject *item;
